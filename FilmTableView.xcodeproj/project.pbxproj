@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E335DD52221C1D290067D40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335DD51221C1D290067D40C /* AppDelegate.swift */; };
-		E335DD54221C1D290067D40C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335DD53221C1D290067D40C /* ViewController.swift */; };
+		E335DD54221C1D290067D40C /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335DD53221C1D290067D40C /* FilmViewController.swift */; };
 		E335DD57221C1D290067D40C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E335DD55221C1D290067D40C /* Main.storyboard */; };
 		E335DD59221C1D2A0067D40C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E335DD58221C1D2A0067D40C /* Assets.xcassets */; };
 		E335DD5C221C1D2A0067D40C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E335DD5A221C1D2A0067D40C /* LaunchScreen.storyboard */; };
+		E335DD67221C1EA60067D40C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335DD66221C1EA60067D40C /* DetailViewController.swift */; };
+		E335DD6D221D80710067D40C /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335DD6C221D80710067D40C /* FilmTableViewCell.swift */; };
+		E335DD70221EB9060067D40C /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335DD6F221EB9060067D40C /* Film.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E335DD4E221C1D290067D40C /* FilmTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E335DD51221C1D290067D40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E335DD53221C1D290067D40C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E335DD53221C1D290067D40C /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
 		E335DD56221C1D290067D40C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E335DD58221C1D2A0067D40C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E335DD5B221C1D2A0067D40C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E335DD5D221C1D2A0067D40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E335DD66221C1EA60067D40C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E335DD6C221D80710067D40C /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		E335DD6F221EB9060067D40C /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		E335DD50221C1D290067D40C /* FilmTableView */ = {
 			isa = PBXGroup;
 			children = (
+				E335DD6E221EB8E90067D40C /* Model */,
+				E335DD63221C1E7F0067D40C /* Scene */,
 				E335DD51221C1D290067D40C /* AppDelegate.swift */,
-				E335DD53221C1D290067D40C /* ViewController.swift */,
 				E335DD55221C1D290067D40C /* Main.storyboard */,
 				E335DD58221C1D2A0067D40C /* Assets.xcassets */,
 				E335DD5A221C1D2A0067D40C /* LaunchScreen.storyboard */,
 				E335DD5D221C1D2A0067D40C /* Info.plist */,
 			);
 			path = FilmTableView;
+			sourceTree = "<group>";
+		};
+		E335DD63221C1E7F0067D40C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E335DD65221C1E900067D40C /* Detail */,
+				E335DD64221C1E850067D40C /* Films */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E335DD64221C1E850067D40C /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				E335DD53221C1D290067D40C /* FilmViewController.swift */,
+				E335DD6C221D80710067D40C /* FilmTableViewCell.swift */,
+			);
+			path = Films;
+			sourceTree = "<group>";
+		};
+		E335DD65221C1E900067D40C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E335DD66221C1EA60067D40C /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E335DD6E221EB8E90067D40C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E335DD6F221EB9060067D40C /* Film.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E335DD54221C1D290067D40C /* ViewController.swift in Sources */,
+				E335DD70221EB9060067D40C /* Film.swift in Sources */,
+				E335DD67221C1EA60067D40C /* DetailViewController.swift in Sources */,
+				E335DD6D221D80710067D40C /* FilmTableViewCell.swift in Sources */,
+				E335DD54221C1D290067D40C /* FilmViewController.swift in Sources */,
 				E335DD52221C1D290067D40C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P5RBZW84K8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FilmTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P5RBZW84K8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FilmTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
